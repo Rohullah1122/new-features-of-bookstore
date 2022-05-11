@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    >
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:outlineSpotShadowColor="@color/black"-->
+<!--            app:cardCornerRadius="5dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:orientation="vertical"-->
+
+
+<!--            >-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgbookuser"
+                        android:layout_width="230dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/b" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+        tools:srcCompat="@tools:sample/avatars" />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                     app:layout_constraintTop_toBottomOf="@+id/imgbookuser">
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="87dp"
+                                    android:layout_height="27dp"
+                                    android:text="Name"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:width="1dp"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tvbname"
+                                    android:layout_width="100dp"
+                                    android:layout_height="27dp"
+                                    android:width="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:hint="Name"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/imgbookuser" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+&lt;!&ndash;                                <TextView&ndash;&gt;
+&lt;!&ndash;                                    android:layout_width="87dp"&ndash;&gt;
+&lt;!&ndash;                                    android:layout_height="27dp"&ndash;&gt;
+&lt;!&ndash;                                    android:text="Rating"&ndash;&gt;
+&lt;!&ndash;                                    android:textStyle="bold"&ndash;&gt;
+&lt;!&ndash;                                    android:gravity="center"&ndash;&gt;
+&lt;!&ndash;                                    android:textColor="@color/white"&ndash;&gt;
+&lt;!&ndash;                                    android:textSize="20sp"&ndash;&gt;
+&lt;!&ndash;                                    />&ndash;&gt;
+
+&lt;!&ndash;                                <TextView&ndash;&gt;
+&lt;!&ndash;                                    android:id="@+id/tvrating"&ndash;&gt;
+&lt;!&ndash;                                    android:layout_width="100dp"&ndash;&gt;
+&lt;!&ndash;                                    android:layout_height="27dp"&ndash;&gt;
+&lt;!&ndash;                                    android:layout_marginTop="4dp"&ndash;&gt;
+&lt;!&ndash;                                    android:hint="Rating"&ndash;&gt;
+&lt;!&ndash;                                    android:background="@color/white"&ndash;&gt;
+&lt;!&ndash;                                    android:textColor="@color/black"&ndash;&gt;
+&lt;!&ndash;                                    android:textSize="15sp"&ndash;&gt;
+&lt;!&ndash;                                    android:gravity="center"&ndash;&gt;
+&lt;!&ndash;                                    android:textStyle="bold"&ndash;&gt;
+&lt;!&ndash;                                    app:layout_constraintStart_toStartOf="parent"&ndash;&gt;
+&lt;!&ndash;                                    app:layout_constraintTop_toBottomOf="@+id/tvbname"&ndash;&gt;
+&lt;!&ndash;                                     />&ndash;&gt;
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+&lt;!&ndash;                <Button&ndash;&gt;
+&lt;!&ndash;                    android:id="@+id/btn_moreinfo"&ndash;&gt;
+&lt;!&ndash;                    android:layout_width="187dp"&ndash;&gt;
+&lt;!&ndash;                    android:layout_height="40dp"&ndash;&gt;
+&lt;!&ndash;                    android:layout_marginTop="300dp"&ndash;&gt;
+&lt;!&ndash;                    android:backgroundTint="@color/lighblue"&ndash;&gt;
+&lt;!&ndash;                    android:text="more info"&ndash;&gt;
+&lt;!&ndash;                    app:layout_constraintBottom_toBottomOf="parent"/>&ndash;&gt;
+&lt;!&ndash;                    app:layout_constraintTop_toBottomOf="@+id/tvrating" />&ndash;&gt;
+&lt;!&ndash;        </androidx.cardview.widget.CardView>&ndash;&gt;
+-->
+</androidx.constraintlayout.widget.ConstraintLayout>
